@@ -1,0 +1,896 @@
+.ms-light {
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+.ms-bold {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.ms-black {
+  font-family: 'Montserrat';
+  font-weight: 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background: #fff;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input,
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+input,
+button,
+a {
+  transition: all, 0.4s ease;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Amatic SC';
+  text-transform: uppercase;
+}
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title {
+  font-size: 66px;
+  letter-spacing: 20px;
+}
+h1.title.sm,
+h2.title.sm,
+h3.title.sm,
+h4.title.sm,
+h5.title.sm {
+  font-size: 36px;
+  letter-spacing: 7px;
+}
+h1.menu_type,
+h2.menu_type,
+h3.menu_type,
+h4.menu_type,
+h5.menu_type {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.container {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+}
+.btn.yellow {
+  background: #FFCC00;
+}
+.btn.black {
+  background: #000;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.btn.black:hover {
+  box-shadow: 0px 0px 0px 2.5px #fff inset, 0px 0px 0px 5px #000;
+}
+.btn.black.highlight {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.btn.black.highlight:hover {
+  color: #fff;
+  box-shadow: none;
+}
+.subtitle {
+  font-size: 18px;
+}
+.flex {
+  display: flex;
+}
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section {
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #fff;
+}
+.text-black {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 26px;
+}
+.top-nav {
+  background: #fff;
+  color: #000;
+  padding: 15px 35px;
+  font-size: 11px;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.top-nav .tel span {
+  margin: 0 11px;
+}
+.top-nav a:hover,
+.top-nav button:hover {
+  color: #cca300;
+}
+.top-nav .link-search {
+  margin: 0 30px;
+}
+.header {
+  background-image: url('../img/firstscreen-bg.jpg'), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 17px 0 198px;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #fff;
+}
+.header .main-nav .nav-list {
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 11px;
+}
+.header .main-nav .nav-list .nav-link {
+  letter-spacing: 2px;
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+.header .main-nav .nav-list .nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.header .main-nav .nav-list .nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+.header .title {
+  margin-top: 170px;
+}
+.header .subtitle {
+  font-weight: 300;
+}
+.header .btn {
+  text-transform: uppercase;
+  padding: 20px 50px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+section.about {
+  position: relative;
+  padding: 154px 0 162px;
+  font-family: 'Montserrat';
+}
+section.about .col {
+  width: 50%;
+  padding-right: 80px;
+}
+section.about .col .text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 26px;
+}
+section.about .col .btn {
+  padding: 23px 50px;
+  margin-top: 11px;
+}
+section.about .chef-wrap {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+}
+section.about .chef-wrap img {
+  height: 100%;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+section.special {
+  background-image: url('../img/speciality-bg.jpg'), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #fff;
+  padding: 195px 0 207px;
+  font-size: 18px;
+}
+section.special .btn {
+  margin-top: 20px;
+  padding: 20px 50px;
+}
+section.special .subtitle {
+  margin-top: 30px;
+}
+.menu {
+  background-color: #efefef;
+  text-align: center;
+  padding: 100px 0 110px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.menu_slide_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.menu_group {
+  width: calc(100% / 3);
+}
+.menu_group:nth-of-type(2) {
+  margin: 0 45px;
+}
+.menu_list {
+  font-size: 14px;
+}
+.menu_list .dish-price {
+  color: #cc9900;
+}
+.menu_list .list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+.menu_list .list-item .dots {
+  flex: 1;
+  border-bottom: 2px dotted #b6b6b6;
+  margin: 0 5px;
+}
+section.delivery {
+  padding: 60px 0;
+  color: #000;
+  font-family: 'Montserrat';
+}
+section.delivery .content-wrap {
+  justify-content: space-between;
+  align-items: center;
+}
+section.delivery .content-wrap .text-content {
+  width: calc(50% - 100px);
+  margin-left: 100px;
+}
+section.delivery .content-wrap .text-content .text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 26px;
+}
+section.delivery .content-wrap .text-content .btn {
+  padding: 24px 48px;
+  margin-top: 40px;
+}
+section.delivery .content-wrap .media-content {
+  width: 50%;
+}
+section.delivery .content-wrap .media-content img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+section.service {
+  background-image: url('../img/service-bg.jpg'), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #fff;
+  padding: 195px 0 226px;
+}
+section.service .subtitle {
+  margin-top: 9px;
+}
+section.service .stars {
+  margin-top: 40px;
+  font-size: 32px;
+}
+section.services-list {
+  padding: 114px 0 102px;
+  font-family: 'Montserrat';
+}
+section.services-list .services {
+  text-align: center;
+  align-items: flex-start;
+}
+section.services-list .services .list-item {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+section.services-list .services .list-item .title {
+  margin: 24px 0 15px;
+}
+section.services-list .services .list-item .text {
+  font-size: 14px;
+  line-height: 20px;
+}
+section.services-list .services .list-item .icon-wrap {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.desserts {
+  background-image: url('../img/desserts-bg.jpg'), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #fff;
+  padding: 212px 0 194px;
+}
+section.desserts .subtitle {
+  margin-top: 11px;
+}
+section.booking {
+  padding: 160px 0 193px;
+  font-family: 'Montserrat';
+  color: #000;
+}
+section.booking .content-wrap .col {
+  width: calc(100% / 3);
+  color: #333;
+}
+section.booking .content-wrap .col:nth-of-type(2) {
+  width: calc((100% / 3) - 60px);
+  margin: 0 30px;
+}
+section.booking .content-wrap .col .title {
+  margin-bottom: 26px;
+}
+section.booking .content-wrap .col .text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 26px;
+}
+section.booking .content-wrap .col .btn {
+  padding: 22px 37px;
+  margin-top: 20px;
+}
+section.booking .content-wrap .col .tel {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+section.booking .content-wrap .col .tel:hover {
+  color: #FFCC00;
+}
+section.booking .content-wrap .col dl {
+  line-height: 25px;
+}
+section.booking .content-wrap .col dl dt {
+  font-weight: normal;
+  color: #000;
+}
+section.booking .content-wrap .col dl dd {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+section.booking .content-wrap .col .info {
+  font-size: 14px;
+}
+#map {
+  height: 600px;
+  width: 100%;
+}
+.footer {
+  background: #000;
+  color: #fff;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding: 179px 0 54px;
+}
+.footer-wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-wrapper .subtitle {
+  margin: 17px 0 27px;
+}
+.footer-wrapper .socials {
+  margin: 114px 0 60px;
+}
+.footer-wrapper .socials .list-item {
+  margin: 0 30px;
+}
+.footer-wrapper .footer-nav {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.footer-wrapper .footer-nav .list-item {
+  margin: 0 30px;
+}
+.footer-wrapper .list-item a {
+  opacity: 0.5;
+}
+.footer-wrapper .list-item a:hover {
+  opacity: 1;
+}
+.footer-wrapper .subscribe-form {
+  min-width: 433px;
+  justify-content: space-between;
+}
+.footer-wrapper .subscribe-form input {
+  border: 2px solid #fff;
+  padding: 15px;
+  width: 100%;
+  margin-right: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.footer-wrapper .subscribe-form input:focus {
+  border-color: #FFCC00;
+}
+.footer-wrapper .subscribe-form .btn {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000;
+  padding: 20px 30px;
+}
+.footer-wrapper .subscribe-form .btn:hover {
+  background: #cca300;
+}
+.bx-viewport {
+  height: 100% !important;
+}
+.slider-nav {
+  font-size: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.slider-nav #menu-prev {
+  margin-right: 45px;
+}
+.slider-nav a:hover {
+  color: #CC9900;
+}
+@media screen and (max-width: 1024px) {
+  .header .main-nav .nav-list {
+    font-size: 10px;
+  }
+  .header .main-nav .nav-list .list-item.logo {
+    order: -1;
+    width: 100px;
+  }
+  .header .main-nav .nav-list .list-item.logo img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 968px) {
+  h1.title,
+  h2.title,
+  h3.title,
+  h4.title,
+  h5.title {
+    font-size: 58px;
+    letter-spacing: 18px;
+  }
+  h1.title.sm,
+  h2.title.sm,
+  h3.title.sm,
+  h4.title.sm,
+  h5.title.sm {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #top-nav.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 1020;
+    top: 0;
+    transition: all, 0.4s ease;
+  }
+  #top-nav.sticky + header {
+    padding-top: 80px;
+  }
+  .header {
+    padding: 34px 0 198px;
+  }
+  .header .main-nav {
+    display: none;
+  }
+  .header .main-nav.active {
+    display: flex;
+    position: fixed;
+    z-index: 1020;
+    padding: 15px;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .header .main-nav.active .nav-list {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .header .main-nav.active .nav-list .list-item {
+    margin-bottom: 15px;
+  }
+  section.about .col {
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+  }
+  section.about .col .btn {
+    margin-top: 30px;
+  }
+  section.about .chef-wrap {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+  section.special {
+    padding: 100px 0;
+  }
+  .menu_slide_wrap {
+    flex-wrap: wrap;
+  }
+  .menu_group {
+    width: 100%;
+  }
+  .menu_group:nth-of-type(2) {
+    margin: 0;
+  }
+  .menu_group .menu_type {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .menu_list {
+    font-size: 14px;
+  }
+  .menu_list .dish-price {
+    color: #cc9900;
+  }
+  .menu_list .list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .menu_list .list-item .dots {
+    flex: 1;
+    border-bottom: 2px dotted #b6b6b6;
+    margin: 0 5px;
+  }
+  section.service {
+    padding: 140px 0;
+  }
+  section.service .subtitle {
+    margin-top: 9px;
+  }
+  section.service .stars {
+    margin-top: 40px;
+    font-size: 32px;
+  }
+  section.services-list .services {
+    flex-direction: column;
+  }
+  section.services-list .services .list-item {
+    width: 100%;
+  }
+  section.services-list .services .list-item .title {
+    font-size: 32px;
+  }
+  section.services-list .services .list-item .text {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  section.services-list .services .list-item .icon-wrap {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section.booking {
+    padding: 100px 0;
+  }
+  section.booking .content-wrap {
+    flex-wrap: wrap;
+  }
+  section.booking .content-wrap .col {
+    width: 50%;
+  }
+  section.booking .content-wrap .col:nth-of-type(3) {
+    width: 100%;
+  }
+  section.booking .content-wrap .col .title {
+    margin-bottom: 26px;
+  }
+  section.booking .content-wrap .col .btn {
+    padding: 22px 37px;
+    margin-top: 20px;
+  }
+  section.booking .content-wrap .col .tel {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  section.booking .content-wrap .col .tel:hover {
+    color: #FFCC00;
+  }
+  section.booking .content-wrap .col dl {
+    line-height: 25px;
+  }
+  section.booking .content-wrap .col dl dt {
+    font-weight: normal;
+    color: #000;
+  }
+  section.booking .content-wrap .col dl dd {
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  section.booking .content-wrap .col .info {
+    font-size: 14px;
+  }
+  #map {
+    height: 480px;
+  }
+  .footer {
+    padding: 80px 0 40px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-wrapper .subtitle {
+    margin: 17px 0 27px;
+  }
+  .footer-wrapper .socials {
+    margin: 114px 0 60px;
+  }
+  .footer-wrapper .socials .list-item {
+    margin: 0 30px;
+  }
+  .footer-wrapper .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-wrapper .footer-nav .list-item {
+    margin: 15px 30px;
+  }
+  .footer-wrapper .list-item a {
+    opacity: 0.5;
+  }
+  .footer-wrapper .list-item a:hover {
+    opacity: 1;
+  }
+  .footer-wrapper .subscribe-form {
+    min-width: 433px;
+    justify-content: space-between;
+  }
+  .footer-wrapper .subscribe-form input {
+    border: 2px solid #fff;
+    padding: 15px;
+    width: 100%;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+  }
+  .footer-wrapper .subscribe-form input:focus {
+    border-color: #FFCC00;
+  }
+  .footer-wrapper .subscribe-form .btn {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+    padding: 20px 30px;
+  }
+  .footer-wrapper .subscribe-form .btn:hover {
+    background: #cca300;
+  }
+}
+@media screen and (max-width: 640px) {
+  h1.title,
+  h2.title,
+  h3.title,
+  h4.title,
+  h5.title {
+    font-size: 42px;
+    letter-spacing: 10px;
+  }
+  h1.title.sm,
+  h2.title.sm,
+  h3.title.sm,
+  h4.title.sm,
+  h5.title.sm {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  section.about .col {
+    display: flex;
+    flex-direction: column;
+  }
+  section.about .col .title {
+    text-align: center;
+  }
+  section.about .col .text {
+    font-size: 14px;
+    text-align: justify;
+    word-break: break-word;
+  }
+  section.about .col .btn {
+    display: inline-block;
+    margin: 30px auto 0;
+  }
+  .menu {
+    padding: 40px 0;
+  }
+  .menu_group .menu_type {
+    font-size: 12px;
+  }
+  .menu_list {
+    font-size: 11px;
+  }
+  .menu_list .dish-price {
+    color: #cc9900;
+  }
+  .menu_list .list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .menu_list .list-item .dots {
+    flex: 1;
+    border-bottom: 2px dotted #b6b6b6;
+    margin: 0 5px;
+  }
+  section.delivery {
+    padding: 40px 0;
+  }
+  section.delivery .content-wrap {
+    flex-direction: column;
+  }
+  section.delivery .content-wrap .text-content {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  section.delivery .content-wrap .text-content .text {
+    font-size: 14px;
+    text-align: justify;
+    word-break: break-word;
+  }
+  section.delivery .content-wrap .text-content .btn {
+    display: inline-block;
+    margin: 30px auto 0;
+  }
+  section.delivery .content-wrap .media-content {
+    width: 100%;
+  }
+  section.delivery .content-wrap .media-content img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  section.booking {
+    padding: 50px 0;
+  }
+  section.booking .content-wrap .col {
+    width: 100%;
+    margin: 15px 0;
+  }
+  section.booking .content-wrap .col:nth-of-type(2) {
+    order: 3;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1.title,
+  h2.title,
+  h3.title,
+  h4.title,
+  h5.title {
+    font-size: 34px;
+  }
+  h1.title.sm,
+  h2.title.sm,
+  h3.title.sm,
+  h4.title.sm,
+  h5.title.sm {
+    font-size: 16px;
+  }
+  .top-nav .tel span {
+    display: none;
+  }
+  .header {
+    padding: 34px 0 100px;
+  }
+  .header .subtitle {
+    font-size: 16px;
+  }
+  section.about {
+    padding: 70px 0;
+  }
+  .footer-wrapper .subscribe-form {
+    min-width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .footer-wrapper .subscribe-form input {
+    margin-right: 0;
+  }
+}
