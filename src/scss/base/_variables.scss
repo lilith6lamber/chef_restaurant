@@ -54,12 +54,6 @@ h5 {
             letter-spacing: 7px;
         }
     }
-    &.menu_type {
-        text-align: center;
-        font-size: 12px;
-        color: #ccc;
-        // .ms-bold();
-    }
 }
 
 @media screen and (min-width: 991.98px) {
@@ -76,12 +70,6 @@ h5 {
                 font-size: 36px;
                 letter-spacing: 7px;
             }
-        }
-        &.menu_type {
-            text-align: center;
-            font-size: 12px;
-            color: #ccc;
-            // .ms-bold();
         }
     }
 }

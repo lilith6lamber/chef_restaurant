@@ -9,7 +9,7 @@ module.exports = function modules() {
     return src('src/js/index.js')
         .pipe(webpack({
             watch: true,
-            mode: 'development',
+            mode: 'production',
             module: {
                 rules: [
                     {

@@ -1,0 +1,43 @@
+.hero {
+    background-image: url("../img/bg/firstscreen-bg--mobile.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-blend-mode: overlay;
+    //padding: 17px 0 198px;
+    padding-bottom: calc(198px / 2);
+    text-align: center;
+    color: #fff;
+    @include centeredBg;
+    &_title {
+        margin-top: 170px;
+        display: inline-block;
+    }
+    &_subtitle {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    &_btn {
+        text-transform: uppercase;
+        padding: 20px 50px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .hero {
+        background-image: url("../img/bg/firstscreen-bg--tablet.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .hero {
+        padding-top: 195px;
+        padding-bottom: 198px;
+        background-image: url("../img/bg/firstscreen-bg--desktop.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .hero {
+        background-image: url("../img/bg/firstscreen-bg--full.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}

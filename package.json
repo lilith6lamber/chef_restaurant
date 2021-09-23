@@ -37,10 +37,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "headroom.js": "^0.12.0",
-    "leaflet": "^1.7.1",
-    "leaflet.pancontrol": "^1.0.0",
-    "leaflet.zoomslider": "^0.7.1",
+    "mapbox-gl": "^2.4.1",
     "sweetalert2": "^11.1.6",
     "tiny-slider": "^2.9.3",
     "vanilla-lazyload": "^17.4.0",

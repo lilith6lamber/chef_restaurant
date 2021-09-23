@@ -1,8 +1,16 @@
 .about {
-    position: relative;
-    padding-top: calc(154px / 2);
-    padding-bottom: calc(162px / 2);
+    &_media {
+        height: 100%;
+        img {
+            display: block;
+            object-fit: cover;
+            max-height: 350px;
+            width: 100%;
+        }
+    }
     &_content {
+        padding-top: calc(154px / 2);
+        padding-bottom: calc(162px / 2);
         &-text {
             font-weight: 300;
             font-size: 16px;
@@ -12,30 +20,45 @@
         &-btn {
             padding: 23px 50px;
             margin-top: 11px;
-        }
-    }
-    &_media {
-        &-img {
             width: 100%;
-            display: block;
-            object-fit: cover;
-            position: absolute;
-            left: 0;
-            top: 0;
+            text-align: center;
         }
     }
+}
 
-    .chef-wrap {
-        position: absolute;
-        height: 100%;
-        width: 50%;
-        right: 0;
-        bottom: 0;
-        img {
+@media screen and (min-width: 575.98px) {
+    .about {
+        &_content {
+            &-btn {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .about {
+        position: relative;
+        &_media {
+            margin-right: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
             height: 100%;
-            display: block;
-            width: 100%;
-            object-fit: cover;
+            width: 50%;
+            img {
+                height: 100%;
+                max-height: unset;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .about {
+        &_content {
+            padding-top: 154px;
+            padding-bottom: 162px;
         }
     }
 }

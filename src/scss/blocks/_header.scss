@@ -1,0 +1,179 @@
+.header {
+    &_navbar {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding: 10px 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: #fff;
+        z-index: 10000;
+        &-tel {
+            i,
+            .number {
+                transition: color 0.4s ease-in-out;
+            }
+            &:hover {
+                i,
+                .number {
+                    color: $yellow;
+                }
+            }
+            span {
+                display: none;
+            }
+        }
+        &-action {
+            .slash {
+                margin: 0 5px;
+            }
+            .link {
+                transition: color 0.4s ease-in-out;
+                &:hover,
+                &:focus {
+                    color: $yellow;
+                }
+            }
+            &_login,
+            &_register {
+                font-size: 11px;
+            }
+            &_search {
+                margin-left: 10px;
+            }
+            &_hamburger {
+                width: 30px;
+                height: 20px;
+                position: relative;
+                margin-left: 15px;
+                .line {
+                    position: absolute;
+                    height: 2px;
+                    background: #000;
+                    width: 100%;
+                    border-radius: 3px;
+                    right: 0;
+                    &--top {
+                        top: 0;
+                    }
+                    &--middle {
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    &--bottom {
+                        bottom: 0;
+                        width: 50%;
+                        transition: width 0.4s ease-in-out;
+                    }
+                }
+                &.active {
+                    .line--bottom {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &_nav {
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(5px);
+        position: fixed;
+        width: 100%;
+        top: -100%;
+        left: 0;
+        z-index: 9999;
+        padding: 30px 0;
+        transition: top 0.4s ease-in-out;
+        &.active {
+            display: block;
+            top: 40px;
+        }
+        &-list {
+            &_item {
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 11px;
+                color: #fff;
+                margin: 10px 0;
+                .link {
+                    transition: opacity 0.4s ease-in-out;
+                    display: inline-block;
+                    padding-bottom: 10px;
+                    position: relative;
+                    &:after {
+                        background: none repeat scroll 0 0 transparent;
+                        bottom: 0;
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        left: 50%;
+                        position: absolute;
+                        background: #fff;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        width: 0;
+                    }
+                    &:hover,
+                    &:focus {
+                        &:after {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+                &--logo {
+                    order: -1;
+                    margin-bottom: 20px;
+                    .logo-img {
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 575.98px) {
+    .header {
+        &_navbar {
+            padding: 10px 30px;
+            &-tel {
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .header {
+        &_navbar {
+            position: static;
+            padding: 10px 0;
+            &-action {
+                &_hamburger {
+                    display: none;
+                }
+            }
+        }
+        &_nav {
+            position: absolute;
+            background: transparent;
+            backdrop-filter: none;
+            display: block;
+            top: 40px;
+            &-list {
+                &_item {
+                    &--logo {
+                        order: unset;
+                        .logo-img {
+                            max-width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

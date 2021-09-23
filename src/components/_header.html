@@ -1,3 +1,55 @@
+@@include('_loader.html')
 <header class="header">
-    <div class="container"></div>
+    <div class="container-fluid">
+        <nav class="header_navbar d-flex align-items-center justify-content-between">
+            <a class="header_navbar-tel" href="tel:+080018001800">
+                <i class="icon-call"></i>
+                <span>Call</span>
+                <span class="number">0800 1800 1800</span>
+            </a>
+            <div class="header_navbar-action d-flex align-items-center ">
+                <a class="header_navbar-action_login link" href="javascript:void(0)">Login</a>
+                <span class="slash">/</span>
+                <a class="header_navbar-action_register link" href="javascript:void(0)">Register</a>
+                <a class="header_navbar-action_search link" href="javascript:void(0)">
+                    <i class="icon-search"></i>
+                </a>
+                <button class="header_navbar-action_hamburger" type="button">
+                    <span class="line line--top"></span>
+                    <span class="line line--middle"></span>
+                    <span class="line line--bottom"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <nav class="header_nav">
+        <div class="container-fluid container-lg">
+            <ul class="header_nav-list d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">About us</a>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Our menu</a>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Special offers</a>
+                </li>
+                <li class="header_nav-list_item header_nav-list_item--logo">
+                    <picture>
+                        <source srcset="./img/logo.webp" type="image/webp">
+                        <img class="logo-img" src="./img/logo.png" alt="Chef">
+                    </picture>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Location</a>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Reservation</a>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Subscribe</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>

@@ -20,65 +20,83 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
 
+
+
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
 </head>
 
-
 <body>
-    <nav class="top-nav flex" id="top-nav">
-        <a href="tel:+080018001800" class="tel">
-            <i class="icon-call"></i>
-            <span>Call</span>
-            <span>0800 1800 1800</span>
-        </a>
-        <div class="user-action">
-            <a href="javascript:void(0)" class="link-login">Login</a>
-            <span class="slash">/</span>
-            <a href="javascript:void(0)" class="link-join">Register</a>
-            <a href="javascript:void(0)" class="link-search">
-                <i class="icon-search"></i>
+    <div id="loadingScreen"></div>
+<header class="header">
+    <div class="container-fluid">
+        <nav class="header_navbar d-flex align-items-center justify-content-between">
+            <a class="header_navbar-tel" href="tel:+080018001800">
+                <i class="icon-call"></i>
+                <span>Call</span>
+                <span class="number">0800 1800 1800</span>
             </a>
-            <button type="button" id="nav-trigger">
-                <i class="icon-menu"></i>
-            </button>
+            <div class="header_navbar-action d-flex align-items-center ">
+                <a class="header_navbar-action_login link" href="javascript:void(0)">Login</a>
+                <span class="slash">/</span>
+                <a class="header_navbar-action_register link" href="javascript:void(0)">Register</a>
+                <a class="header_navbar-action_search link" href="javascript:void(0)">
+                    <i class="icon-search"></i>
+                </a>
+                <button class="header_navbar-action_hamburger" type="button">
+                    <span class="line line--top"></span>
+                    <span class="line line--middle"></span>
+                    <span class="line line--bottom"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <nav class="header_nav">
+        <div class="container-fluid container-lg">
+            <ul class="header_nav-list d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">About us</a>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Our menu</a>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Special offers</a>
+                </li>
+                <li class="header_nav-list_item header_nav-list_item--logo">
+                    <picture>
+                        <source srcset="./img/logo.webp" type="image/webp">
+                        <img class="logo-img" src="./img/logo.png" alt="Chef">
+                    </picture>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Location</a>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Reservation</a>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="link" href="javascript:void(0)">Subscribe</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <header class="header">
-        <div class="container">
-            <nav class="main-nav" id="main-nav">
-                <ul class="nav-list flex">
-                    <li class="list-item">
-                        <a href="javascript:void(0)" class="nav-link">About us</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="javascript:void(0)" class="nav-link">Our menu</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="javascript:void(0)" class="nav-link">Special offers</a>
-                    </li>
-                    <li class="list-item logo">
-                        <img src="./img/logo.png" alt="Chef">
-                    </li>
-                    <li class="list-item">
-                        <a href="javascript:void(0)" class="nav-link">Location</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="javascript:void(0)" class="nav-link">Reservation</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="javascript:void(0)" class="nav-link">Subscribe</a>
-                    </li>
-                </ul>
-            </nav>
-            <h1 class="title" data-aos="fade-up">Organic natural food</h1>
-            <p class="subtitle" data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit, sed do eiusmod.</p>
-            <a href="javascript:void(0)" class="btn black" data-aos="fade-up" data-aos-delay="300">See our menu</a>
-        </div>
-    </header>
+</header>
     <main>
-        <section class="about">
+        <section class="hero">
             <div class="container">
-                <div class="about_content col-12 col-md-6">
+                <h1 class="hero_title title wow fadeInUp" data-wow-duration="500" data-wow-delay="1000">Organic natural
+                    food</h1>
+                <p class="hero_subtitle wow fadeInUp" data-wow-duration="500" data-wow-delay="1500">Lorem ipsum dolor
+                    sit amet, consectetur
+                    adipisicing elit, sed do eiusmod.</p>
+                <a class="hero_btn btn btn--black wow fadeInUp" href="javascript:void(0)" data-wow-delay="1700">See our
+                    menu</a>
+            </div>
+        </section>
+        <section class="about">
+                <div class="container">
+                    <div class="about_content col-lg-5">
                         <h4 class="about_content-title title title--sm">About</h4>
                         <p class="about_content-text">
                             Our Chefs offer you perfect cooking, best served dishes with fresh ingredients and old
@@ -89,26 +107,19 @@
                             many more.
                         </p>
                         <a href="javascript:void(0)" class="about_content-btn btn btn--black highlight">Read more</a>
+                    </div>
                 </div>
-                <div class="about_media col-12 col-md-6">
+                <div class="about_media">
                     <picture>
-                        <source type="image/webp" 
-                        data-srcset="./img/content/chef--mobile.webp 576w,
-                        ./img/content/chef.webp 577w"
-                        srcset="./img/content/chef--mobile.webp 576w,
-                        ./img/content/chef.webp 577w"
-                        data-sizes="100w"
-                        sizes="100w">
-                        <img class="about_media-img lazy" data-src="./img/content/chef.jpg" 
-                        src="./img/content/chef.jpg"
-                        data-srcset="./img/content/chef--mobile.jpg 576w"
-                        srcset="./img/content/chef--mobile.jpg 576w"
-                        data-sizes="100w"
-                        sizes="100w"
-                        alt="chefs">
+                        <source type="image/webp" data-srcset="./img/content/chef--mobile.webp 576w,
+                                                            ./img/content/chef.webp 577w" srcset="./img/content/chef--mobile.webp 576w,
+                                                            ./img/content/chef.webp 577w" data-sizes="100w"
+                            sizes="100w">
+                        <img class="lazy" data-src="./img/content/chef.jpg"
+                            src="./img/content/chef.jpg" data-srcset="./img/content/chef--mobile.jpg 576w"
+                            srcset="./img/content/chef--mobile.jpg 576w" data-sizes="100w" sizes="100w" alt="chefs">
                     </picture>
                 </div>
-            </div>
         </section>
         <section class="special">
             <div class="container">
@@ -120,6 +131,213 @@
                     data-wow-delay="500">7 Day’s Menu</a>
             </div>
         </section>
+        <section class="menu">
+    <div class="container">
+        <h4 class="menu_title title title--sm">Menu</h4>
+        <div class="menu_slider">
+            <div class="menu_slider-item">
+                <h5 class="menu_slider-item_type">Meat</h5>
+                <ul class="menu_slider-item_list">
+                    <li class="list-item">
+                        <p class="name">Chicken Breast</p>
+                        <span class="dots"></span>
+                        <p class="price">$19.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Fresh Grilled Asparagus</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Pork-Stuffed Skins</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Grilled Chicken</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.49</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Steak Frites</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_slider-item">
+                <h5 class="menu_slider-item_type">Sides</h5>
+                <ul class="menu_slider-item_list">
+                    <li class="list-item">
+                        <p class="name">Chicken Breast</p>
+                        <span class="dots"></span>
+                        <p class="price">$19.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Fresh Grilled Asparagus</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Pork-Stuffed Skins</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Grilled Chicken</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.49</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Steak Frites</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Steak Frites</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_slider-item">
+                <h5 class="menu_slider-item_type">Pasta</h5>
+                <ul class="menu_slider-item_list">
+                    <li class="list-item">
+                        <p class="name">Chicken Breast</p>
+                        <span class="dots"></span>
+                        <p class="price">$19.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Fresh Grilled Asparagus</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Pork-Stuffed Skins</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Grilled Chicken</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.49</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Steak Frites</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="menu_slider-item">
+                <h5 class="menu_slider-item_type">Meat</h5>
+                <ul class="menu_slider-item_list">
+                    <li class="list-item">
+                        <p class="name">Chicken Breast</p>
+                        <span class="dots"></span>
+                        <p class="price">$19.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Fresh Grilled Asparagus</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Pork-Stuffed Skins</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Grilled Chicken</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.49</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Steak Frites</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_slider-item">
+                <h5 class="menu_slider-item_type">Sides</h5>
+                <ul class="menu_slider-item_list">
+                    <li class="list-item">
+                        <p class="name">Chicken Breast</p>
+                        <span class="dots"></span>
+                        <p class="price">$19.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Fresh Grilled Asparagus</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Pork-Stuffed Skins</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Grilled Chicken</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.49</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Steak Frites</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Steak Frites</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_slider-item">
+                <h5 class="menu_slider-item_type">Pasta</h5>
+                <ul class="menu_slider-item_list">
+                    <li class="list-item">
+                        <p class="name">Chicken Breast</p>
+                        <span class="dots"></span>
+                        <p class="price">$19.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Fresh Grilled Asparagus</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Pork-Stuffed Skins</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.50</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Grilled Chicken</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.49</p>
+                    </li>
+                    <li class="list-item">
+                        <p class="name">Steak Frites</p>
+                        <span class="dots"></span>
+                        <p class="price">$25.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_slider-controls d-flex align-items-center justify-content-center">
+            <a class="slider-control slider-control--prev" href="javascript:void(0)">
+                <i class="icon-angle-left"></i>
+            </a>
+            <a class="slider-control slider-control--next" href="javascript:void(0)">
+                <i class="icon-angle-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
         <section class="delivery">
             <div class="container">
                 <div class="row g-5 g-md-4 g-xl-5 align-items-center">

@@ -1,16 +1,12 @@
 $(document).ready(function () {
-    AOS.init();
+
     
     const menuSlider = $('#menu-slider').bxSlider({
         pager: false,
         controls: false
     });
 
-    $('#nav-trigger').click(function (e) { 
-        e.preventDefault();
-        $('#main-nav').toggleClass('active');
-        
-    });
+
 
     $('#menu-prev').click(function () {
         menuSlider.goToPrevSlide();
@@ -41,8 +37,8 @@ $(window).scroll(function () {
 function drawMap() {
     let map = L.map('map', {
         scrollWheelZoom: false,
-        zoomsliderControl: true,
-        zoomControl: false
+/*         zoomsliderControl: true,
+        zoomControl: false */
     }).setView([40.746399, -73.952332], 16);
 
     let myFilter = [
@@ -52,15 +48,15 @@ function drawMap() {
     ];
 
     L.tileLayer = L.tileLayer.colorFilter('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        attribution: '',
         filter: myFilter
     }).addTo(map);
 
-    L.control.pan().addTo(map);
+    //L.control.pan().addTo(map);
 
     let mapIcon = L.icon({
-        iconUrl: './img/marker-icon.png',
-        shadowUrl: './img/marker-shadow.png',
+        iconUrl: './img/icons/marker-icon.png',
+        shadowUrl: './img/icons/marker-shadow.png',
 
         iconSize: [47, 47], // size of the icon
         shadowSize: [67, 67], // size of the shadow

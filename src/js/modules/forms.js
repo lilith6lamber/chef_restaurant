@@ -11,8 +11,11 @@ export function validateSubcribition(formSelector, fieldSelector) {
     const success = {
         title: "Your coupon is waiting for you!",
         html: `
-            <p class="main">If you don't see any check your spam folder.'</p>`,
+            <p class="main">If you don't see any check your spam folder.</p>`,
         showCloseButton: true,
+        toast: true,
+        timer: 5000,
+        position: 'top-end',
         customClass: {
             popup: 'subscribe_popup',
             title: 'subscribe_popup-title',
