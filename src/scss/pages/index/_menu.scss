@@ -1,0 +1,34 @@
+.menu {
+    background-color: #efefef;
+    text-align: center;
+    padding: 100px 0 110px;
+    /* .ms-bold(); */
+    &_slide_wrap {
+        /* .flex(); */
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    &_group {
+        width: calc(100% / 3);
+        &:nth-of-type(2) {
+            margin: 0 45px;
+        }
+    }
+    &_list {
+        font-size: 14px;
+        .dish-price {
+            color: #cc9900;
+        }
+        .list-item {
+            /* .flex(); */
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+            .dots {
+                flex: 1;
+                border-bottom: 2px dotted #b6b6b6;
+                margin: 0 5px;
+            }
+        }
+    }
+}

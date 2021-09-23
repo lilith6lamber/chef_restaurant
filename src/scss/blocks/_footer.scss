@@ -1,0 +1,106 @@
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: calc(179px / 2);
+    padding-bottom: calc(54px / 2);
+    .link {
+        opacity: 0.5;
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
+    &_subtitle {
+        margin: 17px 0 27px;
+        font-size: 18px;
+    }
+    &_form {
+        &-field {
+            border: 2px solid #fff;
+            padding: 15px;
+            &.error {
+                border-color: red;
+            }
+            &:focus {
+                border-color: $yellow;
+            }
+        }
+        &-btn {
+            margin-top: 5px;
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            color: #000;
+            padding: 20px 30px;
+            background: $yellow;
+            font-weight: bold;
+            &:hover,
+            &:focus {
+                background: transparent;
+                border-color: $yellow;
+                color: #fff;
+            }
+        }
+    }
+    &_socials {
+        margin-top: calc(114px / 2);
+        margin-bottom: calc(60px / 2);
+        .list-item {
+            margin-right: 30px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    &_nav {
+        .list-item {
+            font-weight: bold;
+            font-size: 11px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 575.98px) {
+    .footer {
+        &_form {
+            max-width: 433px;
+            margin: 0 auto;
+            &-field {
+                flex-grow: 1;
+            }
+            &-btn {
+                margin-top: 0;
+                margin-left: 5px;
+            }
+        }
+        &_socials {
+            margin-top: calc(114px / 2);
+            margin-bottom: calc(60px / 2);
+            .list-item {
+                margin-right: 60px;
+            }
+        }
+        &_nav {
+            .list-item {
+                margin-bottom: 0;
+                margin-right: 20px;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .footer {
+        padding-top: 179px;
+        padding-bottom: 54px;
+    }
+}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: #fff;
+    font-size: 14px;
+    color: #111;
+    font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+input,
+button,
+a {
+    transition: $animated;
+    color: inherit;
+    font-family: inherit;
+}
+
+

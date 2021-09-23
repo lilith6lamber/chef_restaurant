@@ -1,0 +1,31 @@
+.events {
+    padding-top: calc(114px / 2);
+    padding-bottom: calc(102px / 2);
+    &_list {
+        &-item {
+            &_flipper {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background: #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &_title {
+                margin: 20px 0;
+            }
+            &_text {
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .events {
+        padding-top: 114px;
+        padding-bottom: 102px;
+    }
+}

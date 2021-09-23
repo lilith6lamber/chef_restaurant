@@ -1,0 +1,37 @@
+.special {
+    background-image: url('../img/bg/speciality-bg--mobile.jpg'), linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+    background-blend-mode: overlay;
+    @include centeredBg;
+    padding-top: calc(195px / 2);
+    padding-bottom: calc(207px / 2);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    &_subtitle {
+        margin-top: 30px;
+    }
+    &_btn {
+        margin-top: 20px;
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .special {
+        background-image: url("../img/bg/speciality-bg--tablet.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .special {
+        padding-top: 195px;
+        padding-bottom: 207px;
+        background-image: url("../img/bg/speciality-bg--desktop.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .special {
+        background-image: url("../img/bg/speciality-bg--full.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}

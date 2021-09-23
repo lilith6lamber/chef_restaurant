@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef | Restaurant</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet preload" as="style" href="preload/fonts.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+
+</head>
+
+
+<body>
+    <nav class="top-nav flex" id="top-nav">
+        <a href="tel:+080018001800" class="tel">
+            <i class="icon-call"></i>
+            <span>Call</span>
+            <span>0800 1800 1800</span>
+        </a>
+        <div class="user-action">
+            <a href="javascript:void(0)" class="link-login">Login</a>
+            <span class="slash">/</span>
+            <a href="javascript:void(0)" class="link-join">Register</a>
+            <a href="javascript:void(0)" class="link-search">
+                <i class="icon-search"></i>
+            </a>
+            <button type="button" id="nav-trigger">
+                <i class="icon-menu"></i>
+            </button>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list flex">
+                    <li class="list-item">
+                        <a href="javascript:void(0)" class="nav-link">About us</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="javascript:void(0)" class="nav-link">Our menu</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="javascript:void(0)" class="nav-link">Special offers</a>
+                    </li>
+                    <li class="list-item logo">
+                        <img src="./img/logo.png" alt="Chef">
+                    </li>
+                    <li class="list-item">
+                        <a href="javascript:void(0)" class="nav-link">Location</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="javascript:void(0)" class="nav-link">Reservation</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="javascript:void(0)" class="nav-link">Subscribe</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="title" data-aos="fade-up">Organic natural food</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod.</p>
+            <a href="javascript:void(0)" class="btn black" data-aos="fade-up" data-aos-delay="300">See our menu</a>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="about_content col-12 col-md-6">
+                        <h4 class="about_content-title title title--sm">About</h4>
+                        <p class="about_content-text">
+                            Our Chefs offer you perfect cooking, best served dishes with fresh ingredients and old
+                            recipes.
+                            We have only carefully sourced and seasonal ingredients in our disposal to make rustic
+                            dishes.
+                            We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and
+                            many more.
+                        </p>
+                        <a href="javascript:void(0)" class="about_content-btn btn btn--black highlight">Read more</a>
+                </div>
+                <div class="about_media col-12 col-md-6">
+                    <picture>
+                        <source type="image/webp" 
+                        data-srcset="./img/content/chef--mobile.webp 576w,
+                        ./img/content/chef.webp 577w"
+                        srcset="./img/content/chef--mobile.webp 576w,
+                        ./img/content/chef.webp 577w"
+                        data-sizes="100w"
+                        sizes="100w">
+                        <img class="about_media-img lazy" data-src="./img/content/chef.jpg" 
+                        src="./img/content/chef.jpg"
+                        data-srcset="./img/content/chef--mobile.jpg 576w"
+                        srcset="./img/content/chef--mobile.jpg 576w"
+                        data-sizes="100w"
+                        sizes="100w"
+                        alt="chefs">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="special">
+            <div class="container">
+                <h2 class="special_title title wow fadeInUp" data-wow-duration="500">Today's speciality</h2>
+                <p class="special_subtitle wow fadeInUp" data-wow-duration="500" data-wow-delay="500">Chicken with
+                    vegetables: mashed potatoes, bean pods, croutons, cranberry jam,
+                    rosemary</p>
+                <a class="special_btn btn btn--black wow fadeInUp" href="javascript:void(0)" data-wow-duration="500"
+                    data-wow-delay="500">7 Day’s Menu</a>
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="container">
+                <div class="row g-5 g-md-4 g-xl-5 align-items-center">
+                    <div class="delivery_media col-12 col-md-6 wow fadeInDown">
+                        <picture>
+                            <source type="image/webp" data-srcset="./img/content/delivery.webp"
+                                srcset="./img/content/delivery.webp">
+                            <img class="delivery_media-img lazy" data-src="./img/content/delivery.jpg"
+                                src="./img/content/delivery.jpg" alt="delivery">
+                        </picture>
+                    </div>
+                    <div class="delivery_info col-12 col-md-6">
+                        <h4 class="delivery_info-title title title--sm wow fadeInUp" data-wow-duration="500"
+                            data-wow-delay="200">Delivery</h4>
+                        <p class="delivery_info-text wow fadeInUp" data-wow-duration="500" data-wow-delay="700">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </p>
+                        <a href="javascript:void(0)" class="delivery_info-btn btn btn--black highlight wow fadeInUp"
+                            data-wow-duration="500" data-wow-delay="1400">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <h2 class="service_title title wow fadeInUp" data-wow-duration="500">Best service ever</h2>
+                <p class="service_subtitle wow fadeInUp" data-wow-duration="500" data-wow-delay="500">Our 3 Michelin
+                    Stars ensure that your experience regarding our cuisine will be one
+                    that
+                    you will not forget.</p>
+                <span class="service_stars wow fadeInUp" data-wow-duration="500" data-wow-delay="500">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                </span>
+            </div>
+        </section>
+        <section class="events">
+    <div class="container">
+        <ul class="events_list row gy-5 gx-md-5">
+            <li class="events_list-item d-flex flex-column align-items-center justify-content-around col-12 col-md-4">
+                <div class="events_list-item_flipper wow flipInX" data-wow-duration="400">
+                    <img class="lazy" data-src="./img/icons/birthdays.svg" src="./img/icons/birthdays.svg" alt="birthdays" onerror="this.src='./img/icons/birthdays.png'">
+                </div>
+                <h4 class="events_list-item_title title title--sm wow fadeInUp">birthdays</h4>
+                <p class="events_list-item_text wow fadeInUp" data-wow-delay="400">Book a table for two with the best Italian
+                    dishes served for the
+                    anniversary. Or reserve a bigger one for a huge family to get together one sunny day.
+                    Gather your friends together</p>
+            </li>
+            <li class="events_list-item d-flex flex-column align-items-center justify-content-around col-12 col-md-4">
+                <div class="events_list-item_flipper wow flipInX" data-wow-duration="400">
+                    <img class="lazy" data-src="./img/icons/meetings.svg" src="./img/icons/meetings.svg" alt="meetings" onerror="this.src='./img/icons/meetings.png'">
+                </div>
+                <h4 class="events_list-item_title title title--sm wow fadeInUp">meetings</h4>
+                <p class="events_list-item_text wow fadeInUp" data-wow-delay="400">You can also impress your boss by choosing
+                    the best place for corporate party
+                    with your co-workers. Reserve a spacious room, set the menu, choose the drinks and invite
+                    guests.</p>
+            </li>
+            <li class="events_list-item d-flex flex-column align-items-center justify-content-around col-12 col-md-4">
+                <div class="events_list-item_flipper wow flipInX" data-wow-duration="400">
+                    <img class="lazy" data-src="./img/icons/weddings.svg" src="./img/icons/weddings.svg" alt="weddings" onerror="this.src='./img/icons/weddings.png'">
+                </div>
+                <h4 class="events_list-item_title title title--sm wow fadeInUp">weddings</h4>
+                <p class="events_list-item_text wow fadeInUp" data-wow-delay="400">75 seats for 75 guests are all at your
+                    disposal. Organize a party for a huge
+                    company and have fun in the restauran. Show your friends the real world of European cuisine
+                    and especially Italian vibes.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="desserts">
+            <div class="container">
+                <h2 class="desserts_title title wow fadeInUp" data-wow-duration="500">Tasty desserts</h2>
+                <p class="desserts_subtitle wow fadeInUp" data-wow-duration="500" data-wow-delay="500">Whether you crave
+                    sweet, savory, decadent or healthy,<br>
+                    we have hundreds of top-rated dessert recipes to satisfy your taste buds.</p>
+            </div>
+        </section>
+        <section class="booking">
+    <div class="container">
+        <div class="row gy-2">
+            <div class="booking_block col-12 col-sm-6 col-md-4">
+                <h4 class="booking_block-title title title--sm">Events</h4>
+                <p class="booking_block-text">
+                    We put at your disposal our place and staff to celebrate your Birthday, the 10th year
+                    anniversary with your colleagues even your Weddings.
+                </p>
+                <a href="javascript:void(0)" class="booking_block-btn btn btn--black highlight">Find out more</a>
+            </div>
+            <div class="booking_block col-12 col-sm-6 col-md-4">
+                <h4 class="booking_block-title title title--sm">Opening times</h4>
+                <dl class="booking_block-opening">
+                    <dt class="days">Monday - Saturday</dt>
+                    <dd class="hours">12:00 am - 10:30 pm</dd>
+                    <dt class="days">Sunday</dt>
+                    <dd class="hours">12:00 am - 9:00 pm</dd>
+                </dl>
+                <p class="booking_block-info">
+                    <span>Fruits de mer & cold food available</span>
+                    <span>3:00 pm - 5:00 pm</span>
+                </p>
+            </div>
+            <div class="booking_block col-12 col-md-4">
+                <h4 class="booking_block-title title title--sm">Find a table</h4>
+                <p class="booking_block-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut.
+                </p>
+                <a class="booking_block-call d-inline-flex align-items-center" href="tel:+080018001800">
+                    <i class="icon-call"></i>
+                    Call:
+                    <span class="number">
+                        0800 1800 1800
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        <div id="map"></div>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <h4 class="footer_title title title--sm">discount coupon</h4>
+        <p class="footer_subtitle">Enter your email address for a 20% off voucher next time you come visit us.</p>
+            <form class="footer_form d-flex flex-wrap" method="POST" name="subscribeForm">
+                <input class="footer_form-field required col-12 col-sm-auto" data-type="email" type="text" name="subscribeEmail" id="subscribeEmail">
+                <button class="footer_form-btn btn btn--yellow col-12 col-sm-auto" type="submit">Subscribe</button>
+            </form>
+        <ul class="footer_socials d-flex justify-content-center align-items-center">
+            <li class="list-item">
+                <a class="link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-facebook"></i>
+                </a>
+            </li>
+            <li class="list-item">
+                <a class="link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-twitter"></i>
+                </a>
+            </li>
+            <li class="list-item">
+                <a class="link" href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-dribbble"></i>
+                </a>
+            </li>
+            <li class="list-item">
+                <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="footer_nav d-flex flex-wrap flex-column flex-sm-row align-items-sm-center justify-content-sm-center">
+            <li class="list-item">
+                <a  class="link"href="javascript:void(0)">About</a>
+            </li>
+            <li class="list-item">
+                <a  class="link"href="javascript:void(0)">Menu</a>
+            </li>
+            <li class="list-item">
+                <a  class="link"href="javascript:void(0)">Offers</a>
+            </li>
+            <li class="list-item">
+                <a  class="link"href="javascript:void(0)">Location</a>
+            </li>
+            <li class="list-item">
+                <a  class="link"href="javascript:void(0)">Reservation</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="js/index.js"></script>
+<script src="js/map.js"></script>
+</body>
+
+</html>

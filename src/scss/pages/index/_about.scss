@@ -1,0 +1,41 @@
+.about {
+    position: relative;
+    padding-top: calc(154px / 2);
+    padding-bottom: calc(162px / 2);
+    &_content {
+        &-text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+            margin-top: 26px;
+        }
+        &-btn {
+            padding: 23px 50px;
+            margin-top: 11px;
+        }
+    }
+    &_media {
+        &-img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .chef-wrap {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        right: 0;
+        bottom: 0;
+        img {
+            height: 100%;
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

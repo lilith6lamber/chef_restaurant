@@ -1,0 +1,34 @@
+.delivery {
+    padding: 60px 0;
+    &_media {
+        &-img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+    &_info {
+        &-text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+            margin-top: 26px;
+        }
+        &-btn {
+            padding: 24px 48px;
+            margin-top: 40px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 575.98px) {
+    .delivery {
+        &_info {
+            &-btn {
+                width: auto;
+            }
+        }
+    }
+}

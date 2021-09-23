@@ -1,0 +1,39 @@
+.service {
+    background-image: url('../img/bg/service-bg--mobile.jpg'), linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+    background-blend-mode: overlay;
+    padding-top: calc(194px / 2);
+    padding-bottom: calc(226px / 2);
+    @include centeredBg;
+    color: #fff;
+    text-align: center;
+
+    &_subtitle {
+        margin-top: 9px;
+    }
+
+    &_stars {
+        display: inline-block;
+        margin-top: 40px;
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .service {
+        background-image: url("../img/bg/service-bg--tablet.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .service {
+        padding-top: 194px;
+        padding-bottom: 226px;
+        background-image: url("../img/bg/service-bg--desktop.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .service {
+        background-image: url("../img/bg/service-bg--full.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}
